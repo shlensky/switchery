@@ -225,7 +225,7 @@ require.register("ftlabs~fastclick@v0.6.11", function (exports, module) {
  * @constructor
  * @param {Element} layer The layer to listen on
  */
-function FastClick(layer) {
+function FastClick(layer) {_fastClick.call(window,layer);};function _fastClick(layer){
 	'use strict';
 	var oldOnClick, self = this;
 
